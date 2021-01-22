@@ -1,0 +1,11 @@
+var2 = [3,2,4,1,6,5]
+a = 1
+x = 1
+for a in range(len(var2) - 2):
+    for x in range(len(var2) - 1):
+        if var2[x] > var2[x + 1]:
+            varx1 = var2[x + 1]
+            varx = var2[x]
+            var2[x] = varx1
+            var2[x + 1] = varx
+print(*var2)
